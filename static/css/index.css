@@ -1,0 +1,75 @@
+
+body {
+    height: 100vh;
+    display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+main {
+    display: grid;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 
+			0 10px 10px rgba(0,0,0,0.22);
+    border-radius: 5px;
+    grid-template-columns: 50% 50%;
+}
+
+#sign_in {
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 20vw;
+    text-align: center;
+}
+
+#register {
+    width: 30vw;
+    background-color: blue;
+    border-radius: 0px 5px 5px 0px;
+    font-weight: bold;
+    color: white;
+    padding: 4%;
+}
+
+#socials {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+#socials a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #3a3a3a;
+    border-radius: 100%;
+    color: #3a3a3a;
+    text-decoration: none;
+    width: 40px;
+    height: 40px;
+}
+
+form {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+form input {
+    border-radius: 5px;
+    border: 1px solid #3a3a3a;
+    padding: 5px 10px;
+}
+
+#recovery {
+    font-size: 0.6rem;
+}
+
+.buttonA:hover{
+    background-color: blue;
+    color:white;
+}

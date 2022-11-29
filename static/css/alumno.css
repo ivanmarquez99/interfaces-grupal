@@ -1,0 +1,116 @@
+/* PARTE DE FORMULARIO Y PRESENTACIÓN DE TABLA*/
+
+#info {
+    margin-top:5%;
+}
+
+#formulario {
+margin-top: 0%;
+display: inline-block;
+} 
+
+#formulario {   
+        width: 40%;
+        margin: 0px auto;
+        margin-left: 30%;
+        margin-top: -20%;
+        justify-content: center;    
+        text-align: center;
+        align-items: center;
+        margin-bottom: 5%;
+        border: 2px dashed black;
+    }
+
+#formulario * {
+        margin: 0px auto;
+        text-align:center;
+        align-items: center;  
+        margin-top:10px;
+        margin-left:20px;                               
+    }
+
+#formulario input[type=submit] {
+                            margin-bottom: 10px;
+                        }
+
+#tabla {
+    margin-left:40%;
+    margin: 0px auto;   
+}  
+
+table {
+    margin-left: 30%;
+    border:1px solid #ccc;
+    padding:10px;
+    /* margin: 0px auto; */
+}
+
+table tr:nth-child(even) {
+                    background:#ccc;
+                }
+
+table td {
+    padding:5px;
+    text-align: center;            
+}
+
+.enlaceALogin {
+    margin-right: 2%;
+    text-align: right;
+}
+
+/*Parte información alumno*/
+
+#info {
+display: block;
+width: 20%;
+}
+    
+#information {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+        
+#information img {
+            border-radius: 100%;
+        }
+        
+#user img {
+        width: 20%;
+    }
+        
+#list_contact {
+            overflow-x: auto;
+        }
+        
+#user hr {
+    width: 50%;
+    border-color: black;
+}
+        
+#contact {
+    display: flex;
+    justify-content: center;
+    padding: 5px 0;
+    gap: 20px;
+}
+        
+#contact:hover {
+            background-color: rgb(218, 218, 218);
+        }
+        
+#contact img {
+        width: 50px;
+        border-radius: 100%;
+    }
+        
+#contact p {
+        margin-bottom: 0px;
+        width: 230px;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }
+

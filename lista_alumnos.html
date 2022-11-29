@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es"><head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="keywords" content="Area de usuario">
+    <meta name="description" content="">
+    <title>Área Profesores - Lista de Alumnos</title>
+    <link rel="stylesheet" href="static/css/empresas_alumnos.css" media="screen">
+    <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i">
+    <link href="https://site-assets.fontawesome.com/releases/v6.2.1/css/all.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+  </head>
+  <body>
+  
+    <section class="Principio">
+        <div class="u-layout">
+          
+            <nav>
+              <div><a href="index.html" class="home"><i class="fa-regular fa-house"></i><span>Inicio</span></a></div> 
+              <div><a href="lista_alumnos.html" class="adress"><i class="fa-regular fa-address-book"></i><span>Lista de Alumnos</span></a></div> 
+              <div><a href="lista_empresas.html" class="settings"><i class="fa-light fa-buildings"></i><span>Empresas</span></a></div> 
+              <div><a href="chat.html" class="chat"><i class="fa-regular fa-envelope"></i><span>Chat</span></a></div> 
+            </nav>
+ 
+            <div class="u-container-style u-gradient u-layout-cell u-size-41 u-layout-cell-2">
+                <img class="teams" src="static/images/teams.jpg" height="20%">
+                <h1 class="usu">Listado de Alumnos</h1>
+                <div class="areas">
+                  <div>
+                    <table id="tablaprueba">
+                      <thead>
+                          <tr>
+                              <th>Nombre Alumno</th><th>Apellido</th><th>DNI</th><th>Empresa</th><th>CORREO ELECTRONICO</th>
+                          </tr>
+                          <tr>
+                            
+                        </tr>
+                          <tr>
+                            <td><input type="text" size="10" value="PEPE" onfocus="marcar(this);"></td>
+                            <td><input type="text" size="10" value="VIYUELA" onfocus="marcar(this);"></td>
+                            <td><input type="text" size="10" value="55664455" onfocus="marcar(this);"></td>
+                            <td><input type="text" size="11" value="MachineGun S.L" onfocus="marcar(this);"></td>
+                            <td><input class="correo" type="text" size="10" value="PepeViyu@gmail.com" onfocus="marcar(this);"></td>
+                            <td><button type="button" class="ver"><a href="pepe_viyuela_profesor.html">Ficha</a></button></td>
+                            <td><button type="button" class="ver" onclick="limpiar()">Borrar</button></td>
+                          </tr>
+                          <tr>
+                            <td><input type="text" size="10" value="AMANCIO" onfocus="marcar(this);"></td>
+                            <td><input type="text" size="10" value="ORTEGA" onfocus="marcar(this);"></td>
+                            <td><input type="text" size="10" value="55664455G" onfocus="marcar(this);"></td>
+                            <td><input type="text" size="11" value="MachineGun S.L" onfocus="marcar(this);"></td>
+                            <td><input class="correo" type="text" size="10" value="AMANCITO@gmail.com" onfocus="marcar(this);"></td>
+                            <td><button type="button" class="ver"><a href="amancio_ortega_profesor.html">Ficha</a></button></td>
+                            <td><button type="button" class="ver" onclick="limpiar()">Borrar</button></td>
+                          </tr>
+                          <tr>
+                            <td><input type="text" size="10" value="LUCIA" onfocus="marcar(this);"></td>
+                            <td><input type="text" size="10" value="BARBILLA" onfocus="marcar(this);"></td>
+                            <td><input type="text" size="10" value="55664455J" onfocus="marcar(this);"></td>
+                            <td><input type="text" size="11" value="MachineGun S.L" onfocus="marcar(this);"></td>
+                            <td><input class="correo" type="text" size="10" value="LUCIITA@gmail.com" onfocus="marcar(this);"></td>
+                            <td><button type="button" class="ver"><a href="lucia_barbilla_profesor.html">Ficha</a></button></td>
+                            <td><button type="button" class="ver" onclick="limpiar()">Borrar</button></td>
+                          </tr>
+                  
+                      </thead>
+                      <tbody></tbody>
+                  </table>
+                  </div>  
+                  <td><button type="button" class="añadir" onclick="agregarFila()">Añadir Alumno</button></td>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </section>
+ 
+    
+    <footer class="footer">
+          <div class="linea1">
+                <ul>
+                  <li>Talleres</li>
+                  <li>Excursiones</li>
+                  <li>Trabajos</li>
+                </ul>
+              </div>
+            <div class="linea2">
+                <ul>
+                  <li>Contacto</li>
+                  <li>Empresas</li>
+                  <li>Claustro</li>
+                </ul>
+              </div>
+      </div>
+    </footer>
+
+    <script src="static/js/general.js"></script>
+    <script src="static/js/lista_alumnos_empresas.js"></script>
+</body>
+</html>
