@@ -1,76 +1,56 @@
 <!DOCTYPE html>
-<html lang="es"><head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta charset="utf-8">
-    <meta name="keywords" content="Area de usuario">
-    <meta name="description" content="">
-    <title>Área Profesores - Lista de Empresas</title>
-    <link rel="stylesheet" href="static/css/empresas_alumnos.css" media="screen">
-    <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i">
-    <link href="https://site-assets.fontawesome.com/releases/v6.2.1/css/all.css" rel="stylesheet">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<html lang="es">
 
-  </head>
-  <body>
-  
-    <section class="Principio">
-        <div class="u-layout">
-          
-          <nav>
-            <div><a href="index.html" class="home"><i class="fa-regular fa-house"></i><span>Inicio</span></a></div> 
-            <div><a href="lista_alumnos.html" class="adress"><i class="fa-regular fa-address-book"></i><span>Lista de Alumnos</span></a></div> 
-            <div><a href="lista_empresas.html" class="settings"><i class="fa-light fa-buildings"></i><span>Empresas</span></a></div> 
-            <div><a href="chat.html" class="chat"><i class="fa-regular fa-envelope"></i><span>Chat</span></a></div> 
-          </nav>
- 
-            <div class="u-container-style u-gradient u-layout-cell u-size-41 u-layout-cell-2">
-              <div class="u-container-layout u-container-layout-2">
-                <img class="teams" src="static/images/teams.jpg" height="20%">
-                <h1 class="usu">Listado de Empresas</h1>
-                <div class="areas">
-                  <div>
-                    <table id="tablaprueba">
-                      <thead>
-                          <tr>
-                              <th>Nombre Empresa</th><th>Telefono</th><th>Mail</th><th>Responsable</th><th>Incidencias</th>
-                          </tr>
-                          <tr>
-                            <td>Machine Gun S.L</td>
-                            <td>+34 776445547</td>
-                            <td>MachineLon@machine.es</td>
-                            <td>Arturito Vacaciones</td>
-                            <td> </td>
-                          </tr>
-                      </thead>
-                  </table>
-                  </div>  
-                </div>
-              </div>
-          </div>
-        </div>
-      </div>
-    </section>
- 
-    
-    <footer class="footer">
-          <div class="linea1">
-                <ul>
-                  <li>Talleres</li>
-                  <li>Excursiones</li>
-                  <li>Trabajos</li>
-                </ul>
-              </div>
-            <div class="linea2">
-                <ul>
-                  <li>Contacto</li>
-                  <li>Empresas</li>
-                  <li>Claustro</li>
-                </ul>
-              </div>
-      </div>
-    </footer>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+  <meta name="keywords" content="Area de usuario">
+  <meta name="description" content="">
+  <title>Área Profesores - Lista de Empresas</title>
+  <link rel="stylesheet" href="static/css/style.css" media="screen">
+  <link rel="stylesheet" href="static/css/empresas_alumnos.css" media="screen">
+  <link id="u-theme-google-font" rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i">
+  <link href="https://site-assets.fontawesome.com/releases/v6.2.1/css/all.css" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
-    <script src="static/js/general.js"></script>
-    <script src="static/js/lista_alumnos_empresas.js"></script>
+</head>
+
+<body>
+  <nav>
+    <div><a href="index.html" class="home"><i class="fa-regular fa-house"></i><span>Inicio</span></a></div>
+    <div><a href="lista_alumnos.html" class="adress"><i class="fa-regular fa-address-book"></i><span>Lista de
+          Alumnos</span></a></div>
+    <div><a href="lista_empresas.html" class="settings"><i class="fa-light fa-buildings"></i><span>Empresas</span></a>
+    </div>
+    <div><a href="chat.html" class="chat"><i class="fa-regular fa-envelope"></i><span>Chat</span></a></div>
+  </nav>
+  <section id="principio">
+    <div id="table-users">
+      <h1 class="usu">Listado de Empresas</h1>
+      <table id="tablaprueba">
+        <thead>
+          <tr>
+            <th>Nombre Empresa</th>
+            <th>Telefono</th>
+            <th>Mail</th>
+            <th>Responsable</th>
+            <th>Incidencias</th>
+          </tr>
+          <tr>
+            <td>Machine Gun S.L</td>
+            <td>+34 776445547</td>
+            <td>MachineLon@machine.es</td>
+            <td>Arturito Vacaciones</td>
+            <td> </td>
+          </tr>
+        </thead>
+      </table>
+    </div>
+  </section>
+
+  <script src="static/js/general.js"></script>
+  <script src="static/js/lista_alumnos_empresas.js"></script>
 </body>
+
 </html>
