@@ -6,11 +6,16 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Vista Alumno: Lucía Barbilla</title>
         <link href="static/css/alumno.css"  type="text/css" rel="stylesheet">
-        <!-- <link href="https://site-assets.fontawesome.com/releases/v6.2.1/css/all.css" rel="stylesheet" type="text/css"> -->
+        <link href="https://site-assets.fontawesome.com/releases/v6.2.1/css/all.css" rel="stylesheet" type="text/css">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     </head>
     <body>
-        <p class="enlaceALogin"><a href="index.html">Cerrar sesión</a></p>
+
+        <nav> 
+            <div><a href="index.html" class="home"><i class="fa-regular fa-close"></i><span>Cerrar sesión</span></a></div> 
+        </nav>
+
+        <aside>
         <section id="info">
             <div id="user">
                 <div id="information">
@@ -49,7 +54,7 @@
                     <p> horas pendientes FCT: 280 horas</p>
                 </div>
         </section>
-
+    </aside>
         <section id="form">
             <div id="formulario">
                 <label for="fecha">Fecha: </label>
@@ -82,31 +87,31 @@
         
             <input type="submit" id="addTarea" name="enviar" value="Enviar">
             </div>
-        </section>
-        
-        <section id="tabla">
-            <table>
-                <thead>
-                    <tr>
-                        <th>Fecha: </th>
-                        <th>Tipo de práctica</th>
-                        <th>Horas realizadas</th>
-                        <th>Actividad realizada</th>
-                        <th>Observaciones</th>
-                    </tr>
-                    <tr>
-                        <td>22/11/2022</td>
-                        <td>FCT</td>
-                        <td>6</td>
-                        <td>Tarea Java Spring</td>
-                        <td>Sin novedad</td>
-                        <td><button onclick="dobleClick()">Editar</button></td>
-                        <td><button class="btn btn-primary btnborrar">Borrar</button></td>
-                    </tr>
-                </thead>
-                <tbody>
-                </tbody>
-            </table>
+
+            <section id="tabla">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Fecha: </th>
+                            <th>Tipo de práctica</th>
+                            <th>Horas realizadas</th>
+                            <th>Actividad realizada</th>
+                            <th>Observaciones</th>
+                        </tr>
+                        <tr>
+                            <td>22/11/2022</td>
+                            <td>FCT</td>
+                            <td>6</td>
+                            <td>Tarea Java Spring</td>
+                            <td>Sin novedad</td>
+                            <td><button onclick="dobleClick()">Editar</button></td>
+                            <td><button class="btn btn-primary btnborrar">Borrar</button></td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+            </section>
         </section>
         
         <script src="static/js/general.js"></script>
