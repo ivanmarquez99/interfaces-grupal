@@ -1,19 +1,30 @@
-/* PARTE DE FORMULARIO Y PRESENTACIÓN DE TABLA*/
+body {
+    display: grid;
+    grid-template-columns: 5% 20% 70%;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+    width: 99vw;
+    overflow: hidden;
+}
 
-#info {
-    margin-top:5%;
+body > * {
+        height: 100vh;
+    }
+
+#form {
+        margin-top:-5%;
 }
 
 #formulario {
-margin-top: 0%;
-display: inline-block;
+                margin-top: -5%;
+                display: inline-block;
 } 
 
 #formulario {   
         width: 40%;
         margin: 0px auto;
         margin-left: 30%;
-        margin-top: -20%;
+        margin-top: 20%;
         justify-content: center;    
         text-align: center;
         align-items: center;
@@ -34,15 +45,15 @@ display: inline-block;
                         }
 
 #tabla {
-    margin-left:40%;
+    /* margin-left:40%; */
     margin: 0px auto;   
 }  
 
 table {
-    margin-left: 30%;
+    margin-left: 0%;
     border:1px solid #ccc;
     padding:10px;
-    /* margin: 0px auto; */
+    margin: 0px auto;
 }
 
 table tr:nth-child(even) {
@@ -62,8 +73,9 @@ table td {
 /*Parte información alumno*/
 
 #info {
-display: block;
-width: 20%;
+            display: block;
+            width: 100%;
+            margin-top: 25%;
 }
     
 #information {
@@ -108,9 +120,55 @@ width: 20%;
         
 #contact p {
         margin-bottom: 0px;
-        width: 230px;
+        width: 250px;
         white-space: nowrap;
         text-overflow: ellipsis;
         overflow: hidden;
     }
 
+    nav {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+        position:relative;
+        background-color: #0d6efd;
+    }
+    
+    nav div {
+        cursor: pointer;
+    }
+    
+    nav a {
+        color: white;
+        font-size: 1.5em;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-decoration: none;
+    }
+    nav a span {
+        font-size: 0.5em;
+        margin-top: 5px;
+    }
+    
+    nav a:hover {
+        color: white;
+    }
+    
+    aside {
+        display: grid;
+        grid-template-rows: 20% 10% 70%;
+        position: relative;
+    }
+    
+    aside::before {
+        background: linear-gradient(to right,transparent 0%,#aaa 100%);
+        width: 10px;
+        height: 100%;
+        content: '';
+        position: absolute;
+        right: 0;
+        opacity: .2;
+    }
