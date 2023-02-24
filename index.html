@@ -16,7 +16,7 @@
 
 <body>
     <main>
-        <div id="sign_in">
+        <div id="sign_in" class="d-flex align-items-center flex-column justify-content-center flex-nowrap bg-white">
             <h1>Iniciar sesión</h1>
             <div id="socials">
             <a href="facebook.com"><i class="fa-brands fa-facebook-f"></i></a>
@@ -27,12 +27,29 @@
                 <label>o usa tu cuenta</label>
                 <input type="email" name="usuario" id="mail" placeholder="E-mail">
                 <input type="password" name="password" id="pass" placeholder="Contraseña">
-                <a href="#" id="recovery">¿Olvidaste la contraseña?</a>
+                <a href="#" id="recovery" data-bs-toggle="modal" data-bs-target="#staticBackdrop">¿Olvidaste la contraseña?</a>
                 
-                <input type="reset" value="Aceptar" class="buttonA" onclick="Login()">
+                <button type="reset" value="Aceptar" class="btn btn-primary" onclick="Login()">Aceptar</button>
             </form>
         </div>
-        <div id="register">
+        <div id="register" class="bg-primary d-flex align-items-center flex-column justify-content-center flex-nowrap">
+            <img src="https://oci02.img.iteso.mx/Otros/60/Fondo-transparente/Logo-ITESO-Principal-Sinfondo-horizontal.png" alt="Logotipo" class="logo">
+            <div class="mt-5 align-items-center d-flex flex-column">
+                <p class="text-align-center">O si lo prefieres registrate gratis</p>
+                <button class="btn btn-light">Registrate</button>
+            </div>
+        </div>
+    </main>
+
+  <!-- Modal -->
+  <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header bg-primary text-white">
+          <h1 class="modal-title fs-5" id="staticBackdropLabel">Aquí tienes usuarios para probar</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
             <h4>Usuarios demostración:</h4>
             <h5>Profesor:</h5>
             <p>Usuario: francisco@admin.com - Contraseña: 123456</p>
@@ -42,13 +59,13 @@
             <p>Usuario: pepe@alumno.com - Contraseña: 123456</p>
             <p>Usuario: amancio@alumno.com  Contraseña: 123456</p>
             <p>Usuario: lucia@alumno.com  Contraseña: 123456</p>
-
-    
-
-
-            
         </div>
-    </main>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Aceptar</button>
+        </div>
+      </div>
+    </div>
+  </div>
     <script src="static/js/general.js"></script>
     <script src="static/js/login.js"></script>
 

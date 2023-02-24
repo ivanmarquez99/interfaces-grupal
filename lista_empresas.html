@@ -17,17 +17,17 @@
 </head>
 
 <body>
-  <nav>
+  <nav class="bg-primary">
     <div><a href="index.html" class="home"><i class="fa-regular fa-house"></i><span>Inicio</span></a></div>
     <div><a href="lista_alumnos.html" class="adress"><i class="fa-regular fa-address-book"></i><span>Lista de Alumnos</span></a></div>
     <div><a href="lista_empresas.html" class="settings"><i class="fa-light fa-buildings"></i><span>Empresas</span></a></div>
     <div><a href="chat.html" class="chat"><i class="fa-regular fa-envelope"></i><span>Chat</span></a></div>
   </nav>
-  <section id="principio">
-    <div id="table-users">
-      <h1 class="usu">Listado de Empresas</h1>
-      <table id="tabla_empresas">
-        <thead>
+  <main id="principio">
+      <h1 class="usu bg-primary text-white text-center py-3">Listado de Empresas</h1>
+      <div class="my-auto mx-auto w-75 d-flex flex-column align-items-center">
+      <table class="table table-striped w-75">
+        <thead class="bg-primary text-white">
           <tr>
             <th>Nombre Empresa</th>
             <th>Telefono</th>
@@ -35,6 +35,8 @@
             <th>Responsable</th>
             <th>Incidencias</th>
           </tr>
+        </thead>
+        <tbody>
           <tr>
             <td>Machine Gun S.L</td>
             <td>+34 776445547</td>
@@ -42,10 +44,10 @@
             <td>Arturito Vacaciones</td>
             <td> </td>
           </tr>
-        </thead>
+        </tbody>
       </table>
     </div>
-  </section>
+  </main>
 
   <script src="static/js/general.js"></script>
   <script src="static/js/lista_alumnos_empresas.js"></script>

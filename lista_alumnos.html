@@ -13,73 +13,78 @@
     href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i">
   <link href="https://site-assets.fontawesome.com/releases/v6.2.1/css/all.css" rel="stylesheet">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"></script>
 </head>
 
 <body>
-  <nav>
+  <nav class="bg-primary">
     <div><a href="index.html" class="home"><i class="fa-regular fa-house"></i><span>Inicio</span></a></div>
-    <div><a href="lista_alumnos.html" class="adress"><i class="fa-regular fa-address-book"></i><span>Lista de Alumnos</span></a></div>
-    <div><a href="lista_empresas.html" class="settings"><i class="fa-light fa-buildings"></i><span>Empresas</span></a></div>
+    <div><a href="lista_alumnos.html" class="adress"><i class="fa-regular fa-address-book"></i><span>Lista de
+          Alumnos</span></a></div>
+    <div><a href="lista_empresas.html" class="settings"><i class="fa-light fa-buildings"></i><span>Empresas</span></a>
+    </div>
     <div><a href="chat.html" class="chat"><i class="fa-regular fa-envelope"></i><span>Chat</span></a></div>
   </nav>
 
-  <section id="principio">
-    <div class="u-layout">
-        <h1 class="usu">Listado de Alumnos</h1>
-        <div class="areas">
-          <div>
-            <table id="tabla_alumnos">
-              <thead>
-                <tr>
-                  <th>Nombre Alumno</th>
-                  <th>Apellido</th>
-                  <th>DNI</th>
-                  <th>Empresa</th>
-                  <th>CORREO ELECTRONICO</th>
-                </tr>
-                <tr>
-
-                </tr>
-                <tr>
-                  <td><input type="text" size="10" value="PEPE" onfocus="marcar(this);"></td>
-                  <td><input type="text" size="10" value="VIYUELA" onfocus="marcar(this);"></td>
-                  <td><input type="text" size="10" value="55664455" onfocus="marcar(this);"></td>
-                  <td><input type="text" size="11" value="MachineGun S.L" onfocus="marcar(this);"></td>
-                  <td><input class="correo" type="text" size="10" value="PepeViyu@gmail.com" onfocus="marcar(this);">
-                  </td>
-                  <td><button type="button" class="ver"><a href="pepe_viyuela_profesor.html"><i class="fa-solid fa-paperclip-vertical"></i> Ficha</a></button></td>
-                  <td><button type="button" class="ver" onclick="limpiar()"><i class="fa-solid fa-trash"></i> Borrar</button></td>
-                </tr>
-                <tr>
-                  <td><input type="text" size="10" value="AMANCIO" onfocus="marcar(this);"></td>
-                  <td><input type="text" size="10" value="ORTEGA" onfocus="marcar(this);"></td>
-                  <td><input type="text" size="10" value="55664455G" onfocus="marcar(this);"></td>
-                  <td><input type="text" size="11" value="MachineGun S.L" onfocus="marcar(this);"></td>
-                  <td><input class="correo" type="text" size="10" value="AMANCITO@gmail.com" onfocus="marcar(this);">
-                  </td>
-                  <td><button type="button" class="ver"><a href="amancio_ortega_profesor.html"><i class="fa-solid fa-paperclip-vertical"></i> Ficha</a></button></td>
-                  <td><button type="button" class="ver" onclick="limpiar()"><i class="fa-solid fa-trash"></i> Borrar</button></td>
-                </tr>
-                <tr>
-                  <td><input type="text" size="10" value="LUCIA" onfocus="marcar(this);"></td>
-                  <td><input type="text" size="10" value="BARBILLA" onfocus="marcar(this);"></td>
-                  <td><input type="text" size="10" value="55664455J" onfocus="marcar(this);"></td>
-                  <td><input type="text" size="11" value="MachineGun S.L" onfocus="marcar(this);"></td>
-                  <td><input class="correo" type="text" size="10" value="LUCIITA@gmail.com" onfocus="marcar(this);">
-                  </td>
-                  <td><button type="button" class="ver"><a href="lucia_barbilla_profesor.html"><i class="fa-solid fa-paperclip-vertical"></i> Ficha</a></button></td>
-                  <td><button type="button" class="ver" onclick="limpiar()"><i class="fa-solid fa-trash"></i> Borrar</button></td>
-                </tr>
-
-              </thead>
-              <tbody></tbody>
-            </table>
-          </div>
-          <td><button type="button" class="añadir" onclick="agregarFila()">Añadir Alumno</button></td>
-        </div>
+  <main id="principio">
+    <h1 class="usu bg-primary text-white text-center py-3">Listado de Alumnos</h1>
+      <div class="my-auto mx-auto w-75 d-flex flex-column align-items-center">
+        <table id="tabla_alumnos" class="table w-100 table-striped">
+          <thead>
+            <tr class="bg-primary text-white">
+              <th>Nombre Alumno</th>
+              <th>Apellido</th>
+              <th>DNI</th>
+              <th>Empresa</th>
+              <th>CORREO ELECTRONICO</th>
+              <th colspan="2"></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><input type="text" size="10" value="PEPE" onfocus="marcar(this);"></td>
+              <td><input type="text" size="10" value="VIYUELA" onfocus="marcar(this);"></td>
+              <td><input type="text" size="10" value="55664455" onfocus="marcar(this);"></td>
+              <td><input type="text" size="11" value="MachineGun S.L" onfocus="marcar(this);"></td>
+              <td><input class="correo" type="text" size="10" value="PepeViyu@gmail.com" onfocus="marcar(this);">
+              </td>
+              <td><button type="button" class="btn btn-primary"><a href="pepe_viyuela_profesor.html"><i
+                      class="fa-solid fa-paperclip-vertical"></i> Ficha</a></button></td>
+              <td><button type="button" class="btn btn-danger" onclick="limpiar()"><i class="fa-solid fa-trash"></i>
+                  Borrar</button></td>
+            </tr>
+            <tr>
+              <td><input type="text" size="10" value="AMANCIO" onfocus="marcar(this);"></td>
+              <td><input type="text" size="10" value="ORTEGA" onfocus="marcar(this);"></td>
+              <td><input type="text" size="10" value="55664455G" onfocus="marcar(this);"></td>
+              <td><input type="text" size="11" value="MachineGun S.L" onfocus="marcar(this);"></td>
+              <td><input class="correo" type="text" size="10" value="AMANCITO@gmail.com" onfocus="marcar(this);">
+              </td>
+              <td><button type="button" class="btn btn-primary"><a href="amancio_ortega_profesor.html"><i
+                      class="fa-solid fa-paperclip-vertical"></i> Ficha</a></button></td>
+              <td><button type="button" class="btn btn-danger" onclick="limpiar()"><i class="fa-solid fa-trash"></i>
+                  Borrar</button></td>
+            </tr>
+            <tr>
+              <td><input type="text" size="10" value="LUCIA" onfocus="marcar(this);"></td>
+              <td><input type="text" size="10" value="BARBILLA" onfocus="marcar(this);"></td>
+              <td><input type="text" size="10" value="55664455J" onfocus="marcar(this);"></td>
+              <td><input type="text" size="11" value="MachineGun S.L" onfocus="marcar(this);"></td>
+              <td><input class="correo" type="text" size="10" value="LUCIITA@gmail.com" onfocus="marcar(this);">
+              </td>
+              <td><button type="button" class="btn btn-primary"><a href="lucia_barbilla_profesor.html"><i
+                      class="fa-solid fa-paperclip-vertical"></i> Ficha</a></button></td>
+              <td><button type="button" class="btn btn-danger" onclick="limpiar()"><i class="fa-solid fa-trash"></i>
+                  Borrar</button></td>
+            </tr>
+          </tbody>
+        </table>
+        <button type="button" class="btn btn-primary" onclick="agregarFila()">Añadir Alumno</button>
       </div>
-    </div>
-  </section>
+  </main>
 
   <script src="static/js/general.js"></script>
   <script src="static/js/lista_alumnos_empresas.js"></script>

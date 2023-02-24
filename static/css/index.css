@@ -5,28 +5,27 @@ body {
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
+    background: url('https://source.unsplash.com/random/?Malaga');
+    background-size: cover;
 }
 
 main {
+    width: 60%;
     display: grid;
     box-shadow: 0 14px 28px rgba(0,0,0,0.25), 
 			0 10px 10px rgba(0,0,0,0.22);
     border-radius: 5px;
     grid-template-columns: 50% 50%;
+    min-height: 50vh;
 }
 
 #sign_in {
-    height: 50vh;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    width: 20vw;
     text-align: center;
+    border-radius: 5px 0px 0px 5px;
 }
 
 #register {
-    width: 30vw;
-    background-color: blue;
+    min-width: 30vw;
     border-radius: 0px 5px 5px 0px;
     font-weight: bold;
     color: white;
@@ -49,6 +48,12 @@ main {
     text-decoration: none;
     width: 40px;
     height: 40px;
+    transition: background-color, color 0.5s;
+}
+
+#socials a:nth-child(1):hover {
+    background-color: blue;
+    color: white;
 }
 
 form {
@@ -72,4 +77,8 @@ form input {
 .buttonA:hover{
     background-color: blue;
     color:white;
+}
+
+.logo{
+    width: 20vw;
 }
